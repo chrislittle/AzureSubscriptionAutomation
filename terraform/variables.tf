@@ -26,6 +26,6 @@ variable "workload" {
       var.workload == "DevTest",
       var.workload == "Production"
     ])
-    error_message = "Please enter a valid Azure Region."
+    error_message = "Please enter a valid workload type (DevTest or Produciton)."
   }
 }
