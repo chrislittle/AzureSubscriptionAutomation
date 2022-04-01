@@ -1,2 +1,2 @@
-# AzureSubscriptionAutomation
-Automated Capabilities for Azure Subscriptions
+# Azure Subscription Automation
+This repo contains Automated Capabilities for creating Azure Subscriptions
