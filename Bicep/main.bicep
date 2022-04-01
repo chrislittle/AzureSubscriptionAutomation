@@ -1,6 +1,6 @@
 targetScope = 'tenant'
 
-@description('Subscription name.')
+@description('Subscription name')
 param name string
 
 @description('MCA Billing Account Name')
