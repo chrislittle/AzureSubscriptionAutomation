@@ -7,7 +7,7 @@ param billingAccountName string
 param billingProfileName string
 @description('MCA Invoice Section Name')
 param invoiceSectionName string
-@description('Full resource ID of billing scope.')
+@description('MCA Billing Scope')
 param billingScope string = '/billingAccounts/${billingAccountName}/billingProfiles/${billingProfileName}/invoiceSections/${invoiceSectionName}'
 @description('Subscription workload')
 @allowed([
