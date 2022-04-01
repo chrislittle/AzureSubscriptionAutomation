@@ -3,14 +3,19 @@ variable "name" {
   description = "Subscription name."
 }
 
-variable "billing_account_name" {
+variable "billing_account_id" {
   type        = string
-  description = "MCA Billing Account Name."
+  description = "MCA Billing Account ID."
 }
 
-variable "enrollment_account_name" {
+variable "billing_profile_id" {
   type        = string
-  description = "MCA Enrollment Account Name."
+  description = "MCA Billing Profile ID."
+}
+
+variable "invoice_section_id" {
+  type        = string
+  description = "MCA Invoice Section ID."
 }
 
 variable "workload" {
