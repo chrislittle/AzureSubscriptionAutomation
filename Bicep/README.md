@@ -1,4 +1,4 @@
-# Azure Bicep Code Provision a Microsoft Customer Agreement (MCA) Subscription
+# Azure Bicep Code to Provision a Microsoft Customer Agreement (MCA) Subscription
 This sample bicep code & process provides customers with a TemplateSpec that can be reused across an organization.
 
 ### Prerequisites
