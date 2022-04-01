@@ -1,8 +1,14 @@
 targetScope = 'tenant'
 @description('Subscription name.')
 param name string
+@description('MCA Billing Account Name')
+param billingAccountName string
+@description('MCA Billing Profile Name')
+param billingProfileName string
+@description('MCA Invoice Section Name')
+param invoiceSectionName string
 @description('Full resource ID of billing scope.')
-param billingScope string
+param billingScope string = '/billingAccounts/${billingAccountName}/billingProfiles/${billingProfileName}/invoiceSections/${invoiceSectionName}'
 @description('Subscription workload')
 @allowed([
   'DevTest'
