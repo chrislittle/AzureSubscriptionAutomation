@@ -8,7 +8,7 @@ param billingProfileName string
 @description('MCA Invoice Section Name')
 param invoiceSectionName string
 @description('MCA Billing Scope')
-param billingScope string = '/billingAccounts/${billingAccountName}/billingProfiles/${billingProfileName}/invoiceSections/${invoiceSectionName}'
+var billingScope = '/billingAccounts/${billingAccountName}/billingProfiles/${billingProfileName}/invoiceSections/${invoiceSectionName}'
 @description('Subscription workload')
 @allowed([
   'DevTest'
