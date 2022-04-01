@@ -10,14 +10,17 @@ This sample bicep code & process provides customers with a TemplateSpec that can
     ```
     git clone https://github.com/chrislittle/AzureSubscriptionAutomation.git
     ```
-2. Create a resource group to store your TemplateSpec
+2. Login to your Azure Environment
+    ```
+    az login
+    ```
+3. Create a resource group to store your TemplateSpec
     ```
     az group create -l eastus -n Templates
     ```
-
-3. Create a TemplateSpec from the Bicep code. 
+4. Create a TemplateSpec from the Bicep code. 
     ```
     az ts create --name NewSubscription --version 1.0 --resource-group Templates --location eastus --template-file ./Bicep/main.bicep
     ```
-4. Navigate to the Azure Portal and to the Templates Resource Group. Select the newly created **NewSubscription** TemplateSpec & choose Deploy.
-5. Populate the required parameters & Create. 
+5. Navigate to the Azure Portal and to the Templates Resource Group. Select the newly created **NewSubscription** TemplateSpec & choose Deploy.
+6. Populate the required parameters & Create. 
