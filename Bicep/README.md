@@ -14,13 +14,17 @@ This sample bicep code & process provides customers with a TemplateSpec that can
     ```
     az login
     ```
-3. Create a resource group to store your TemplateSpec
+3. Set the correct Azure Subscription context to store your TemplateSpec
+    ```
+    az account set --subscription "SUBSCRIPTIONID"
+    ```
+4. Create a resource group to store your TemplateSpec
     ```
     az group create -l eastus -n Templates
     ```
-4. Create a TemplateSpec from the Bicep code. 
+5. Create a TemplateSpec from the Bicep code. 
     ```
     az ts create --name NewSubscription --version 1.0 --resource-group Templates --location eastus --template-file ./Bicep/main.bicep
     ```
-5. Navigate to the Azure Portal and to the Templates Resource Group. Select the newly created **NewSubscription** TemplateSpec & choose Deploy.
-6. Populate the required parameters & Create. 
+6. Navigate to the Azure Portal and to the Templates Resource Group. Select the newly created **NewSubscription** TemplateSpec & choose Deploy.
+7. Populate the required parameters & Create. 
